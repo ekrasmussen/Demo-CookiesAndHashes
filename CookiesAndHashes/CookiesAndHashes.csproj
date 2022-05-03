@@ -14,8 +14,4 @@
     <ProjectReference Include="..\CookiesAndHashes-ClassLibrary\CookiesAndHashes-ClassLibrary.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="HashAndSaltTools\" />
-  </ItemGroup>
-
 </Project>
