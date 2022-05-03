@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookiesAndHashes", "Cookies
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookiesAndHashes-ClassLibrary", "CookiesAndHashes-ClassLibrary\CookiesAndHashes-ClassLibrary.csproj", "{A3E63B58-15AA-4D2C-B471-5D828E464B3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookiesAndHashes-API", "CookiesAndHashes-API\CookiesAndHashes-API.csproj", "{23B1E0A0-1F84-46DB-A3E3-3AC4E884AD7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashGenerator", "HashGenerator\HashGenerator.csproj", "{47FFBFDE-D377-4E73-9AC6-FCAC43C72B20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{A3E63B58-15AA-4D2C-B471-5D828E464B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3E63B58-15AA-4D2C-B471-5D828E464B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3E63B58-15AA-4D2C-B471-5D828E464B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23B1E0A0-1F84-46DB-A3E3-3AC4E884AD7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23B1E0A0-1F84-46DB-A3E3-3AC4E884AD7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23B1E0A0-1F84-46DB-A3E3-3AC4E884AD7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23B1E0A0-1F84-46DB-A3E3-3AC4E884AD7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47FFBFDE-D377-4E73-9AC6-FCAC43C72B20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47FFBFDE-D377-4E73-9AC6-FCAC43C72B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47FFBFDE-D377-4E73-9AC6-FCAC43C72B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47FFBFDE-D377-4E73-9AC6-FCAC43C72B20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
