@@ -124,7 +124,18 @@ namespace CookiesAndHashes.Controllers
             User user = await userService.GetByUsername(username);
 
             //Now we will use the salt from that user, along with the typed in password. And generate a hash
+            //Meaning the input is the password that we typed in, but the salt is from the user on the database
+            string loginHash = HashAndSaltGenerator.GetHash(password, user.Salt);
 
+            //Now we check if that password matches the hashed password from the database user!
+            //If it matches, it means we typed in the correct password for that user
+            if(loginHash == user.HashedPassword)
+            {
+                return user;
+            }
+
+            //if it didnt match, in this case we return null
+            return null;
         }
     }
 }

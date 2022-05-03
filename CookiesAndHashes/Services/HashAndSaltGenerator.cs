@@ -27,6 +27,11 @@ namespace CookiesAndHashes.Services
             }
         }
 
+        /// <summary>
+        /// Generate a random sequence of bytes to use as our salt
+        /// This is just one of many ways to make random text for a salt
+        /// </summary>
+        /// <returns></returns>
         public static string GenerateSalt()
         {
             //First we create an array for bytes
