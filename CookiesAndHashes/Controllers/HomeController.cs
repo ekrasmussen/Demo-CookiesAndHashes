@@ -1,4 +1,5 @@
 ﻿using CookiesAndHashes.Models;
+using CookiesAndHashes.Services;
 using CookiesAndHashes_ClassLibrary;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -49,7 +50,7 @@ namespace CookiesAndHashes.Controllers
             //Replace this with your means of authenticating
             //In our case, i have a API with a mock database that has username and hashed password stored, along with role
             //From here, please look at AuthenticateUser to see how Hashing and Salting works
-            User foundUser = AuthenticateUser(username, password);
+            User foundUser = await AuthenticateUser(username, password);
 
             //If we found a user, meaning the user successfully typed in the right username and password, we make a cookie
             //Otherwise we return to the same page with a new ViewBag Message
@@ -114,15 +115,16 @@ namespace CookiesAndHashes.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public User AuthenticateUser(string username, string password)
+        //AUTHENTICATING USER USING HASH AND SALT
+        public async Task<User> AuthenticateUser(string username, string password)
         {
-            Login login = new Login
-            {
-                Username = username,
-                PlaintextPassword = password
-            };
+            UserService userService = new UserService();
 
-            return null;
+            //first we get the user by their Username to retrieve their User model
+            User user = await userService.GetByUsername(username);
+
+            //Now we will use the salt from that user, along with the typed in password. And generate a hash
+
         }
     }
 }
