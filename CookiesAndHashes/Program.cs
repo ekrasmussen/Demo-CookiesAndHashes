@@ -37,7 +37,11 @@ CookiePolicyOptions cpo = new CookiePolicyOptions
     //This defines the policy on how the cookie is used, SameSiteMode specifies the Cookie constraints
     //See https://docs.microsoft.com/en-us/dotnet/api/system.web.samesitemode?view=netframework-4.8
 
-    MinimumSameSitePolicy = Microsoft.AspNetCore.Http.SameSiteMode.Lax
+    MinimumSameSitePolicy = SameSiteMode.Lax,
+
+    //Ill make the Cookie set to always be secure, CookieSecurePolicy is a enum
+    //The different CookieSecurePolicy states can be found here https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.cookiesecurepolicy?view=aspnetcore-6.0
+    Secure = CookieSecurePolicy.Always
 };
 
 app.MapControllerRoute(
@@ -45,3 +49,5 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+//Continue and have a look in the HomeController!
