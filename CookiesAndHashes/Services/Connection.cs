@@ -5,7 +5,7 @@ namespace CookiesAndHashes.Services
 {
     internal abstract class Connection
     {
-        const string baseurl = "localhost:7069/api/";
+        const string baseurl = "localhost:7161/api/";
 
         readonly HttpClient client;
         readonly JsonSerializer serializer;

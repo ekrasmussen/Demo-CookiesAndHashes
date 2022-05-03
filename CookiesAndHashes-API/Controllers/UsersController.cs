@@ -18,7 +18,14 @@ namespace CookiesAndHashes_API.Controllers
         [HttpGet, Route("{username}")]
         public User Get(string username)
         {
-            return mockDatabase.users.FirstOrDefault(x => x.Username == username);
+            User foundUser = mockDatabase.users.Single(u => u.Username == username);
+
+            if(foundUser == null)
+            {
+                return null;
+            }
+
+            return foundUser;
         }
     }
 }
