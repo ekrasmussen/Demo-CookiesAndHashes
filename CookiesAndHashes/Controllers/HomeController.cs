@@ -104,7 +104,7 @@ namespace CookiesAndHashes.Controllers
 
         //For testing, we make the privacy page hidden behind the fact you have to be logged in!
         [Authorize]
-        public IActionResult Privacy()
+        public IActionResult Secret()
         {
             return View();
         }
