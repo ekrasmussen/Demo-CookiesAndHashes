@@ -2,6 +2,7 @@
 using CookiesAndHashes_ClassLibrary;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Security.Claims;
@@ -100,6 +101,8 @@ namespace CookiesAndHashes.Controllers
             return RedirectToAction("Index");
         }
 
+        //For testing, we make the privacy page hidden behind the fact you have to be logged in!
+        [Authorize]
         public IActionResult Privacy()
         {
             return View();

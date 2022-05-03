@@ -9,8 +9,17 @@ builder.Services.AddControllersWithViews();
 /// <summary>
 /// Add Authentication to the services, in the parameters we explain the authentication scheme we will use.
 /// In this case we also use .AddCookie();, but you could also do something like .AddOAuth() if we wanted to use OAuth instead!
+/// We can also add some options, which i do here for where login path is, but you can also specify the "Forbidden" page!
 /// </summary>
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+{
+    options.LoginPath = "/Home/Login";
+    options.LogoutPath = "/Home/Logout";
+    //options.AccessDeniedPath = "/MyOwnForbiddenPage";
+});
+
+//Dont forget to add MVC
+builder.Services.AddMvc();
 
 var app = builder.Build();
 
