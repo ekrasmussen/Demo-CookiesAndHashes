@@ -5,7 +5,7 @@ namespace CookiesAndHashes_API.Database
     public class MockDatabase
     {
         public List<User> users;
-
+        private static MockDatabase Instance = null;
         private MockDatabase()
         {
             users = new List<User>
@@ -52,6 +52,15 @@ namespace CookiesAndHashes_API.Database
                     Salt = "3e36cb6c42e0a5bcc7ac8609ffd86e31"
                 }
             };
+        }
+
+        public static MockDatabase GetInstance()
+        {
+            if(Instance == null)
+            {
+                Instance = new MockDatabase();
+            }
+            return Instance;
         }
     }
 }

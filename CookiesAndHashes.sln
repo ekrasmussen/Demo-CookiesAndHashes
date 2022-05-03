@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookiesAndHashes", "CookiesAndHashes\CookiesAndHashes.csproj", "{D1959357-0EAF-412F-B39A-1114E9FE6483}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookiesAndHashes-MVC", "CookiesAndHashes\CookiesAndHashes-MVC.csproj", "{D1959357-0EAF-412F-B39A-1114E9FE6483}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookiesAndHashes-ClassLibrary", "CookiesAndHashes-ClassLibrary\CookiesAndHashes-ClassLibrary.csproj", "{A3E63B58-15AA-4D2C-B471-5D828E464B3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookiesAndHashes-API", "CookiesAndHashes-API\CookiesAndHashes-API.csproj", "{23B1E0A0-1F84-46DB-A3E3-3AC4E884AD7F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashGenerator", "HashGenerator\HashGenerator.csproj", "{47FFBFDE-D377-4E73-9AC6-FCAC43C72B20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookiesAndHashes-API", "CookiesAndHashes-API\CookiesAndHashes-API.csproj", "{4828A0AB-9E4B-424F-8008-F2E6A5B8509E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +25,14 @@ Global
 		{A3E63B58-15AA-4D2C-B471-5D828E464B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3E63B58-15AA-4D2C-B471-5D828E464B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3E63B58-15AA-4D2C-B471-5D828E464B3B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{23B1E0A0-1F84-46DB-A3E3-3AC4E884AD7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{23B1E0A0-1F84-46DB-A3E3-3AC4E884AD7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{23B1E0A0-1F84-46DB-A3E3-3AC4E884AD7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{23B1E0A0-1F84-46DB-A3E3-3AC4E884AD7F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{47FFBFDE-D377-4E73-9AC6-FCAC43C72B20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{47FFBFDE-D377-4E73-9AC6-FCAC43C72B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47FFBFDE-D377-4E73-9AC6-FCAC43C72B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47FFBFDE-D377-4E73-9AC6-FCAC43C72B20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4828A0AB-9E4B-424F-8008-F2E6A5B8509E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4828A0AB-9E4B-424F-8008-F2E6A5B8509E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4828A0AB-9E4B-424F-8008-F2E6A5B8509E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4828A0AB-9E4B-424F-8008-F2E6A5B8509E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
